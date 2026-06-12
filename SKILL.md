@@ -1,4 +1,4 @@
----
+﻿---
 name: openclaw-memory-system
 description: "OpenClaw 记忆系统：Obsidian vault 同步、Qdrant 向量检索、零 LLM 压缩、自愈监控 | Memory system for OpenClaw agents: vault sync, vector search, zero-LLM compression, self-healing"
 ---
@@ -35,7 +35,7 @@ memory system, long-term memory, vector search, knowledge sync, Obsidian vault, 
 
 ```bash
 cd ~/.openclaw/workspace/skills
-git clone https://github.com/yxyujian98-png/openclaw-memory-system.git
+git clone https://github.com/yxyujian98-png/vault-memory-system.git
 cd openclaw-memory-system
 pip install -r requirements.txt
 docker-compose up -d
@@ -102,7 +102,7 @@ An OpenClaw memory enhancement skill. Solves three problems:
 
 ```bash
 cd ~/.openclaw/workspace/skills
-git clone https://github.com/yxyujian98-png/openclaw-memory-system.git
+git clone https://github.com/yxyujian98-png/vault-memory-system.git
 cd openclaw-memory-system
 pip install -r requirements.txt
 docker-compose up -d

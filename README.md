@@ -1,4 +1,4 @@
-# OpenClaw 记忆系统 / OpenClaw Memory System
+﻿# OpenClaw 记忆系统 / OpenClaw Memory System
 
 > **让 OpenClaw Agent 拥有持久记忆。**
 >
@@ -24,7 +24,7 @@
 
 ```bash
 cd ~/.openclaw/workspace/skills
-git clone https://github.com/yxyujian98-png/openclaw-memory-system.git
+git clone https://github.com/yxyujian98-png/vault-memory-system.git
 cd openclaw-memory-system
 pip install -r requirements.txt
 docker-compose up -d                              # 启动 Qdrant
@@ -156,7 +156,7 @@ This skill automates all three.
 
 ```bash
 cd ~/.openclaw/workspace/skills
-git clone https://github.com/yxyujian98-png/openclaw-memory-system.git
+git clone https://github.com/yxyujian98-png/vault-memory-system.git
 cd openclaw-memory-system
 pip install -r requirements.txt
 docker-compose up -d                              # Start Qdrant
