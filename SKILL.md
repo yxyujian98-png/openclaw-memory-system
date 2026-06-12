@@ -1,23 +1,23 @@
 ﻿---
 name: agent-openclaw-memory
-description: "OpenClaw Agent 本地知识库 + 自进化自动管理。零 token 成本运行、Obsidian vault 实时同步、向量检索、自愈健康监控、自动归档/分类/清理，不需要人工干预。Self-evolving local knowledge base + auto memory & file management for OpenClaw agents."
+description: "OpenClaw Agent 自进化记忆系统。零 token 成本运行、Obsidian vault 实时同步、向量检索、自愈健康监控、自动归档/分类/清理，不需要人工干预。Self-evolving memory system for OpenClaw agents."
 ---
 
-# OpenClaw Agent 本地知识库 + 自动记忆 & 文件管理
+# OpenClaw Agent 自进化记忆系统
 
-> **让 OpenClaw Agent 拥有本地知识库和自动记忆 & 文件管理。**
+> **OpenClaw Agent 的自进化记忆系统。**
 >
-> Obsidian vault 实时同步 → Agent 可搜索。会话观察零 LLM 成本压缩 → 不丢失。自动归档/分类/清理 → vault 自己管自己。向量检索 + 嵌入服务 + 同步链路 → 自动健康监控 + 自愈修复。
+> 零 token 成本运行 — 脚本自动压缩/索引/检索，不烧 Agent token。Obsidian vault 实时同步 — 知识库自动进入 Agent 记忆。自进化 — 执行模式自动提炼为规则，记忆越用越聪明。自愈 — 出错自动修复，不需要人管。
 >
-> **Build a local knowledge base + automatic memory & file management for your OpenClaw Agent.**
+> **Self-evolving memory system for OpenClaw Agent.**
 >
-> Auto-sync Obsidian vault → searchable by Agent. Zero-LLM compression → nothing lost. Auto archive/categorize/cleanup → vault manages itself. Vector search + embedding + sync chain → auto health monitoring + self-healing.
+> Zero-token operation — scripts handle compression/indexing/search, no Agent tokens burned. Obsidian vault real-time sync — knowledge base auto-enters Agent memory. Self-evolving — execution patterns auto-distilled into rules, memory gets smarter over time. Self-healing — errors auto-fixed, no human intervention.
 
 ## 关键词 / Keywords
 
-本地知识库、自动记忆管理、长期记忆、向量检索、知识库同步、Obsidian vault、Qdrant、embedding、agent memory、零 LLM 压缩、自愈监控、vault 同步、概念聚合、记忆蒸馏、健康检查、自动维护、DAG 调度、抗体自愈
+自进化记忆、零 token、本地知识库、自动记忆管理、长期记忆、向量检索、Obsidian vault、Qdrant、embedding、agent memory、自愈监控、自动维护、DAG 调度、抗体自愈、概念聚合、记忆蒸馏、健康检查
 
-local knowledge base, auto memory management, long-term memory, vector search, knowledge sync, Obsidian vault, Qdrant, embedding, agent memory, zero-LLM compression, self-healing, vault sync, concept consolidation, memory distillation, health monitoring, auto maintenance, DAG scheduler, antibody healing
+self-evolving memory, zero token, local knowledge base, auto memory management, long-term memory, vector search, Obsidian vault, Qdrant, embedding, agent memory, self-healing, auto maintenance, DAG scheduler, antibody healing, concept consolidation, memory distillation, health monitoring
 
 ---
 
