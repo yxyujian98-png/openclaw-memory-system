@@ -39,6 +39,7 @@ INTENT_STRATEGIES = {
 
 _mem0 = None
 MEM0_CONFIG = None
+_MEM0_AVAILABLE = None
 
 def _init_mem0_config():
     global MEM0_CONFIG
@@ -62,11 +63,23 @@ def _init_mem0_config():
 
 
 def get_mem0():
-    global _mem0
+    global _mem0, _MEM0_AVAILABLE
+    if _MEM0_AVAILABLE is False:
+        return None
     if _mem0 is None:
         _init_mem0_config()
-        from mem0 import Memory
-        _mem0 = Memory.from_config(MEM0_CONFIG)
+        try:
+            from mem0 import Memory
+            _mem0 = Memory.from_config(MEM0_CONFIG)
+            _MEM0_AVAILABLE = True
+        except ImportError:
+            _MEM0_AVAILABLE = False
+            print("[WARN] mem0ai not installed. Mem0 search disabled. Install: pip install mem0ai", file=sys.stderr)
+            return None
+        except Exception as e:
+            _MEM0_AVAILABLE = False
+            print(f"[WARN] Mem0 init failed: {e}", file=sys.stderr)
+            return None
     return _mem0
 
 
@@ -111,8 +124,10 @@ def search_knowledge_base(query, limit=3, include_old=False):
 
 
 def search_mem0(query, user_id="main", limit=3):
+    m = get_mem0()
+    if m is None:
+        return []
     try:
-        m = get_mem0()
         results = m.search(query, filters={"user_id": user_id}, limit=limit)
         return results.get("results", [])
     except Exception as e:

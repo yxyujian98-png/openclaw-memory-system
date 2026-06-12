@@ -11,13 +11,34 @@
     "requires": {
       "python": ">=3.10",
       "services": ["qdrant"],
-      "optional_services": ["lmstudio"]
+      "optional_services": ["lmstudio"],
+      "pip": ["requests", "numpy"],
+      "optional_pip": ["mem0ai"]
+    },
+    "hooks": {
+      "recommended": ["session-memory", "memory-compact", "memory-extract"]
+    },
+    "cron": {
+      "recommended": [
+        {
+          "name": "heartbeat",
+          "schedule": "every 45m",
+          "command": "python scripts/maintenance_orchestrator.py --cycle light --parallel"
+        },
+        {
+          "name": "heartbeat-heavy",
+          "schedule": "every 6h",
+          "command": "python scripts/maintenance_orchestrator.py --cycle heavy --parallel"
+        }
+      ]
     }
   },
   "files": [
     "SKILL.md",
     "README.md",
     "package.json",
+    "requirements.txt",
+    "docker-compose.yml",
     "scripts/*.py",
     "templates/*",
     "docs/*"
